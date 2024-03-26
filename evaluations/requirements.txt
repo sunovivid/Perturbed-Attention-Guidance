@@ -1,0 +1,4 @@
+tensorflow-gpu
+scipy
+requests
+tqdm
