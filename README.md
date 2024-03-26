@@ -53,7 +53,7 @@ conda install gxx_linux-64 #
 pip install torch==1.11.0+cu113 torchvision==0.12.0+cu113 -f https://download.pytorch.org/whl/torch_stable.html
 pip install -r requirements.txt
 ```
-If you have any issues with the environment setup, please refer to the original repository.
+If you have any issues with the environment setup, please refer to the original repository or [create an issue](https://github.com/sunovivid/Perturbed-Attention-Guidance/issues). We will gladly check it.
 
 ### Downloading Pretrained Diffusion Models (and Classifiers for CG)
 Pretrained weights for ImageNet can be downloaded from [the repository](https://github.com/openai/guided-diffusion). Download and place them in the `./models/` directory.
