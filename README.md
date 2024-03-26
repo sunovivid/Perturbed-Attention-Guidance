@@ -9,14 +9,13 @@ This is the official implementation of the paper "Self-Rectifying Diffusion Samp
 
 For more information, check out [the project page](https://ku-cvlab.github.io/Perturbed-Attention-Guidance).
 
-## How to Use PAG
-### Overview
+## Overview
 
 This repository is based on [SusungHong/Self-Attention-Guidance](https://github.com/SusungHong/Self-Attention-Guidance), which is based on [openai/guided-diffusion](https://github.com/openai/guided-diffusion). The environment setup and the pretrained models are the same as the original repository. The main difference is that the sampling code is modified to support perturbed-attention guidance. Please refer to [Using PAG in Guided-Diffusion](#Using-PAG-in-Guided-Diffusion) for environment setup and sampling.
 
 If you're interested in utilizing PAG with Stable Diffusion, we have made available a [🤗🧨diffusers community pipeline](https://huggingface.co/hyoungwoncho/sd_perturbed_attention_guidance) on the HuggingFace Hub. There's no need to download the entire source code; simply specifying the `custom_pipeline` argument to **hyoungwoncho/sd_perturbed_attention_guidance** with the latest diffusers library (v0.27) is all that's required. Example code is provided in `sd_pag_demo.ipynb`.
 
-### Using PAG in Stable Diffusion
+## Using PAG with Stable Diffusion
 
 ```
 from diffusers import StableDiffusionPipeline
@@ -38,7 +37,7 @@ output_baseline = pipe(
         pag_applied_layers_index=['m0']
     ).images[0]
 ```
-## Using PAG in Guided-Diffusion 
+## Using PAG with Guided-Diffusion 
 ### Environment
 The following commands are for setting up the environment using conda.
 ```
