@@ -40,7 +40,7 @@ output_baseline = pipe(
 ### Environment
 The following commands are for setting up the environment using conda. 
 - Python 3.9
-- Pytorch 1.11.0, Torchvision 0.12.0
+- PyTorch 1.11.0, Torchvision 0.12.0
 - NVIDIA RTX 3090
 ```
 conda create -n pag python=3.9
