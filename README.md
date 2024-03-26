@@ -38,12 +38,16 @@ output_baseline = pipe(
 ```
 ## Using PAG with Guided-Diffusion 
 ### Environment
-The following commands are for setting up the environment using conda.
+The following commands are for setting up the environment using conda. 
+- python 3.9
+- pytorch 1.11.0
+- NVIDIA RTX 3090
 ```
 conda create -n pag python=3.9
 conda activate pag
 
-conda install gxx_linux-64 # 
+conda install gxx_linux-64 #
+pip install torch==1.11.0+cu113 torchvision==0.12.0+cu113 -f https://download.pytorch.org/whl/torch_stable.html
 pip install -r requirements.txt
 ```
 If you have any issues with the environment setup, please refer to the original repository.
