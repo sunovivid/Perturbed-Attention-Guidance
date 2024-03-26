@@ -26,7 +26,10 @@ pipe = StableDiffusionPipeline.from_pretrained(
     torch_dtype=torch.float16
 )
 
-output_baseline = pipe(
+device="cuda"
+pipe = pipe.to(device)
+
+output = pipe(
         prompts,
         width=512,
         height=512,
