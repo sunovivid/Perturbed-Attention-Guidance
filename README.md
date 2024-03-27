@@ -1,4 +1,5 @@
 # Perturbed-Attention Guidance
+<a href="https://arxiv.org/abs/2403.17377"><img src="https://img.shields.io/badge/arXiv-2403.17377-B31B1B"></a>
 <a href="https://ku-cvlab.github.io/Perturbed-Attention-Guidance"><img src="https://img.shields.io/badge/Project%20Page-online-brightgreen"></a>
 
 This is the official implementation of the paper "Self-Rectifying Diffusion Sampling with Perturbed-Attention Guidance" by Ahn et al.
@@ -7,7 +8,7 @@ This is the official implementation of the paper "Self-Rectifying Diffusion Samp
 
 **Perturbed-Attention Guidance** significantly enhances the sample quality of diffusion models *without requiring external conditions*, such as class labels or text prompts, or *additional training*. This proves particularly valuable in unconditional generation settings, where classifier-free guidance (CFG) is inapplicable. Our guidance can be utilized to enhance performance in various downstream tasks that leverage unconditional diffusion models, including ControlNet with an empty prompt and image restoration tasks like super-resolution and inpainting.
 
-For more information, check out [the project page](https://ku-cvlab.github.io/Perturbed-Attention-Guidance).
+For more information, check out [the project page](https://ku-cvlab.github.io/Perturbed-Attention-Guidance) and [the paper](https://arxiv.org/abs/2403.17377).
 
 ## Overview
 
