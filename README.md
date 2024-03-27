@@ -1,8 +1,13 @@
 # Perturbed-Attention Guidance
 <a href="https://arxiv.org/abs/2403.17377"><img src="https://img.shields.io/badge/arXiv-2403.17377-B31B1B"></a>
 <a href="https://ku-cvlab.github.io/Perturbed-Attention-Guidance"><img src="https://img.shields.io/badge/Project%20Page-online-brightgreen"></a>
+<a href="https://huggingface.co/hyoungwoncho/sd_perturbed_attention_guidance"><img src="https://img.shields.io/badge/HuggingFace-demo-yellow
 
-This is the official implementation of the paper "Self-Rectifying Diffusion Sampling with Perturbed-Attention Guidance" by Ahn et al.
+"></a>
+
+This is the official implementation of the paper "Self-Rectifying Diffusion Sampling with Perturbed-Attention Guidance",
+
+by [Donghoon Ahn](https://github.com/sunovivid)\*, [Hyoungwon Cho](https://github.com/HyoungwonCho)\*, [Jaewon Min](https://github.com/Min-Jaewon), [Wooseok Jang](https://github.com/woo1726), [Jungwoo Kim](https://github.com/kmjnwn), [Seonhwa Kim](https://github.com/shhh0620), Hyunhee Park, [Kyonghwan Jin](https://ipa.korea.ac.kr)<sup>†</sup>, [Seungryong Kim](https://cvlab.korea.ac.kr)<sup>†</sup>.
 
 ![teaser](./imgs/teaser.png)
 
