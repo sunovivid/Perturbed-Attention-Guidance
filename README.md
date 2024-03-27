@@ -5,7 +5,7 @@
 
 This is the official implementation of the paper "Self-Rectifying Diffusion Sampling with Perturbed-Attention Guidance",
 
-by [Donghoon Ahn](https://github.com/sunovivid)\*, [Hyoungwon Cho](https://github.com/HyoungwonCho)\*, [Jaewon Min](https://github.com/Min-Jaewon), [Wooseok Jang](https://github.com/woo1726), [Jungwoo Kim](https://github.com/kmjnwn), [Seonhwa Kim](https://github.com/shhh0620), Hyunhee Park, [Kyonghwan Jin](https://ipa.korea.ac.kr)<sup>†</sup>, [Seungryong Kim](https://cvlab.korea.ac.kr)<sup>†</sup>
+by [Donghoon Ahn](https://github.com/sunovivid)\*, [Hyoungwon Cho](https://github.com/HyoungwonCho)\*, [Jaewon Min](https://github.com/Min-Jaewon), [Wooseok Jang](https://github.com/woo1726), [Jungwoo Kim](https://github.com/kmjnwn), [Seonhwa Kim](https://github.com/shhh0620), Hyunhee Park, [Kyonghwan Jin](https://ipa.korea.ac.kr)<sup>†</sup>, [Seungryong Kim](https://cvlab.korea.ac.kr)<sup>†</sup>.
 
 ![teaser](./imgs/teaser.png)
 
