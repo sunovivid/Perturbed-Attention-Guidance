@@ -42,6 +42,16 @@
     <script src="js/video_comparison.js"></script>
     <script src="js/app.js"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style type="text/css">
+        img-comparison-slider {
+          --divider-width: 3px;
+          --divider-color: #c0c0c0;
+          --divider-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+          --default-handle-width: 100px;
+          --default-handle-opacity: 1.0;
+        }
+      </style>
 </head>
 
 <!-- Image Comparison Slider -->
@@ -216,11 +226,11 @@
                         <h3>Conditional Generation</h3>
                     </strong>
                 </div>
-                <img-comparison-slider style="width: 49%;" hover="hover">
+                <img-comparison-slider style="width: 49%;" hover="hover" value="66">
                     <img slot="first" src="imgs/baseline/adm_uncond_baseline.png" width="100%" />
                     <img slot="second" src="imgs/ours/adm_uncond_ours.png" width="100%" />
                 </img-comparison-slider>
-                <img-comparison-slider style="width: 49%;" hover="hover" hover="hover">
+                <img-comparison-slider style="width: 49%;" hover="hover">
                     <img slot="first" src="imgs/baseline/adm_cond_baseline0.png" width="100%" />
                     <img slot="second" src="imgs/ours/adm_cond_ours0.png" width="100%" />
                 </img-comparison-slider>
@@ -237,14 +247,14 @@
                     <strong>
                         <h3>Unconditional Generation</h3>
                     </strong>
-                    <img-comparison-slider style="width: 49%;" hover="hover">
+                    <img-comparison-slider style="width: 49%;" hover="hover" value="66">
                         <img slot="first" src="imgs/baseline/sd_uncond_baseline_quarter.png" width="100%" />
                         <img slot="second" src="imgs/ours/sd_uncond_ours_quarter.png" width="100%" />
                     </img-comparison-slider>
                     <strong>
                         <h3>Conditional Generation (CFG vs CFG + Ours)</h3>
                     </strong>
-                    <img-comparison-slider style="width: 75%;" hover="hover">
+                    <img-comparison-slider style="width: 75%;" hover="hover" value="66">
                         <img slot="first" src="imgs/baseline/sd_cfg.png" width="100%" />
                         <img slot="second" src="imgs/ours/sd_cfg_ours.png" width="100%" />
                     </img-comparison-slider>
