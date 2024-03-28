@@ -2,6 +2,9 @@
 <a href="https://arxiv.org/abs/2403.17377"><img src="https://img.shields.io/badge/arXiv-2403.17377-B31B1B"></a>
 <a href="https://ku-cvlab.github.io/Perturbed-Attention-Guidance"><img src="https://img.shields.io/badge/Project%20Page-online-brightgreen"></a>
 <a href="https://huggingface.co/hyoungwoncho/sd_perturbed_attention_guidance"><img src="https://img.shields.io/badge/HuggingFace-demo-yellow"></a>
+<a target="_blank" href="https://colab.research.google.com/github/GoogleCloudPlatform/vertex-ai-samples/blob/main/notebooks/official/model_monitoring/model_monitoring.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
 
 This is the official implementation of the paper "Self-Rectifying Diffusion Sampling with Perturbed-Attention Guidance",
 
@@ -21,6 +24,9 @@ If you're interested in utilizing PAG with Stable Diffusion, we have made availa
 
 ## Using PAG with Stable Diffusion
 
+Try in Colab! <a target="_blank" href="https://colab.research.google.com/github/GoogleCloudPlatform/vertex-ai-samples/blob/main/notebooks/official/model_monitoring/model_monitoring.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a> 
 ```
 from diffusers import StableDiffusionPipeline
 
