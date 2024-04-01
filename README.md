@@ -60,8 +60,8 @@ output = pipe(
         width=512,
         height=512,
         num_inference_steps=50,
-        guidance_scale=4.5,
-        pag_scale=3.5,
+        guidance_scale=4.0,
+        pag_scale=3.0,
         pag_applied_layers_index=['m0']
     ).images[0]
 ```
