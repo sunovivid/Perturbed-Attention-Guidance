@@ -24,7 +24,7 @@ If you're interested in utilizing PAG with Stable Diffusion, we have made availa
 
 ## Using PAG with Stable Diffusion
 
-You can try demo in Colab! <a target="_blank" href="https://colab.research.google.com/#fileId=https://huggingface.co/hyoungwoncho/sd_perturbed_attention_guidance/blob/main/sd_pag_demo.ipynb">
+You can try a demo in Colab! <a target="_blank" href="https://colab.research.google.com/#fileId=https://huggingface.co/hyoungwoncho/sd_perturbed_attention_guidance/blob/main/sd_pag_demo.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 
