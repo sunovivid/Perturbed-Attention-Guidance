@@ -26,7 +26,9 @@ If you're interested in utilizing PAG with Stable Diffusion, we have made availa
 
 Try in Colab! <a target="_blank" href="https://colab.research.google.com/github/GoogleCloudPlatform/vertex-ai-samples/blob/main/notebooks/official/model_monitoring/model_monitoring.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
-</a> 
+</a>
+
+Loading Pipeline
 ```
 from diffusers import StableDiffusionPipeline
 
@@ -38,7 +40,9 @@ pipe = StableDiffusionPipeline.from_pretrained(
 
 device="cuda"
 pipe = pipe.to(device)
-
+```
+Sampling with PAG
+```
 output = pipe(
         prompts,
         width=512,
@@ -49,6 +53,19 @@ output = pipe(
         pag_applied_layers_index=['m0']
     ).images[0]
 ```
+Sampling with PAG and CFG
+```
+output = pipe(
+        prompts,
+        width=512,
+        height=512,
+        num_inference_steps=50,
+        guidance_scale=4.5,
+        pag_scale=3.5,
+        pag_applied_layers_index=['m0']
+    ).images[0]
+```
+
 ## Using PAG with Guided-Diffusion 
 ### Environment
 The following commands are for setting up the environment using conda. 
