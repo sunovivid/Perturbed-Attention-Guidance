@@ -131,3 +131,17 @@ mpiexec -n $GPU_COUNT
     --gpu_offset 0  # change --gpu to --gpu_offset
     ~ same code ~
 ```
+
+## PAG in Downstream tasks
+
+Implementations applying PAG to downstream tasks are provided below.
+
+### PSLD + PAG
+
+Thanks to [LituRout/PSLD](https://github.com/LituRout/PSLD), we applied PAG to PSLD based on the repository.
+
+PSLD is a framework to solve linear inverse problems leveraging pre-trained latent diffusion models. Please refer to [Min-Jaewon/PSLD_PAG](https://github.com/Min-Jaewon/PSLD_PAG) to use PSLD with PAG.
+
+### Stable Diffusion Inpainting + PAG
+
+Will be added soon.
