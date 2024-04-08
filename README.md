@@ -132,7 +132,7 @@ mpiexec -n $GPU_COUNT
     ~ same code ~
 ```
 
-## PAG in Downstream tasks
+## PAG with Downstream tasks
 
 Implementations applying PAG to downstream tasks are provided below.
 
