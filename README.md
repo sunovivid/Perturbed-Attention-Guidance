@@ -134,7 +134,7 @@ mpiexec -n $GPU_COUNT
 
 ## PAG with Downstream tasks
 
-Implementations applying PAG to downstream tasks are provided below.
+Implementations applying PAG to downstream tasks are provided here.
 
 ### PSLD + PAG
 
