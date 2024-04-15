@@ -156,8 +156,6 @@ Will be added soon.
 
 ## Implementation for Community Pipelines (SD WebUI / SD WebUI Forge / ComfyUI)
 
-Would you like to integrate this with your workflows or pipelines?
-
 Thanks to the exceptional efforts of @v0xie and @pamparamm, you can now easily incorporate PAG into your pipelines or workflows.
 
 **WebUI (Automatic1111)**: [v0xie/sd-webui-incantations](https://github.com/v0xie/sd-webui-incantations)
