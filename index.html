@@ -85,29 +85,29 @@
                         Jaewon&nbsp;Min<sup>1</sup>
                     </a>
                     <span style="padding-left: 20px;"></span>
-                    <a style="text-decoration:none" href="https://github.com/kmjnwn">
-                        Jungwoo&nbsp;Kim<sup>1</sup>
-                    <br>
-                    <!-- </a> -->
-                    <span style="padding-left: 20px;"></span>
                     <a style="text-decoration:none" href="https://scholar.google.com/citations?user=7cyLEQ0AAAAJ&hl=ko&oi=sra">
                         Wooseok&nbsp;Jang<sup>1</sup>
                     </a>
                     <span style="padding-left: 20px;"></span>
+                    <a style="text-decoration:none" href="https://github.com/kmjnwn">
+                        Jungwoo&nbsp;Kim<sup>1</sup>
+                    </a>
+                    <br>
+                    <span style="padding-left: 20px;"></span>
                     <a style="text-decoration:none" href="https://github.com/shhh0620">
-                        SeonHwan&nbsp;Kim<sup>1</sup>
+                        SeonHwa&nbsp;Kim<sup>1</sup>
                     </a>
                     <span style="padding-left: 20px;"></span>
                     <!-- <a style="text-decoration:none" href="https://cvlab.korea.ac.kr"> -->
-                        Hyunhee Park<sup>2</sup>
+                        Hyun&nbsp;Hee&nbsp;Park<sup>2</sup>
                     <!-- </a> -->
                     <span style="padding-left: 20px;"></span>
                     <a style="text-decoration:none" href="https://ipa.korea.ac.kr">
-                        Kyong Hwan Jin<sup>1&dagger;</sup>
+                        Kyong&nbsp;Hwan&nbsp;Jin<sup>1&dagger;</sup>
                     </a>
                     <span style="padding-left: 20px;"></span>
                     <a style="text-decoration:none" href="https://cvlab.korea.ac.kr">
-                        Seungryong Kim<sup>1&dagger;</sup>
+                        Seungryong&nbsp;Kim<sup>1&dagger;</sup>
                     </a>
                     <br>
                     <small>
@@ -131,6 +131,9 @@
                 </div>
             </div>
         </div>
+
+        <br/>
+        
         <script>
             document.getElementById('author-row').style.maxWidth = document.getElementById("-row").clientWidth + 'px';
         </script>
@@ -151,6 +154,12 @@
                                     <h4><strong>Code</strong></h4>
                             </a>
                         </li>
+                        <li>
+                            <a href="https://huggingface.co/hyoungwoncho/sd_perturbed_attention_guidance" target="_blank">
+                                <image src="img/hf-logo.png" height="60px">
+                                    <h4><strong>SD Demo</strong></h4>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -158,7 +167,7 @@
             <div class="row">
                 <div class="text-center">
                     <img src="./img/projectpage_teasesr_small.PNG"
-                        style="width: 94%; margin-top: 3%; padding-right: 3%; margin-bottom: -0.5%;" width="100%">
+                        style="width: 94%; margin-top: 2%; padding-right: 3%; margin-bottom: -0.5%;" width="100%">
                 </div>
                 <div style="text-align:justify;  margin-left:6%; margin-right:6%; margin-bottom: 50px;">
                     <strong>Qualitative comparisons between unguided (baseline) and perturbed-attention-guided (PAG)
@@ -229,12 +238,12 @@
                     </strong>
                 </div>
                 <img-comparison-slider style="width: 49%;" hover="hover" value="66">
-                    <img slot="first" src="imgs/baseline/adm_uncond_baseline.png" width="100%" />
-                    <img slot="second" src="imgs/ours/adm_uncond_ours.png" width="100%" />
+                    <img slot="first" src="imgs/baseline/adm_uncond_baseline.jpg" width="100%" />
+                    <img slot="second" src="imgs/ours/adm_uncond_ours.jpg" width="100%" />
                 </img-comparison-slider>
                 <img-comparison-slider style="width: 49%;" hover="hover">
-                    <img slot="first" src="imgs/baseline/adm_cond_baseline0.png" width="100%" />
-                    <img slot="second" src="imgs/ours/adm_cond_ours0.png" width="100%" />
+                    <img slot="first" src="imgs/baseline/adm_cond_baseline0.jpg" width="100%" />
+                    <img slot="second" src="imgs/ours/adm_cond_ours0.jpg" width="100%" />
                 </img-comparison-slider>
             </div>
 
@@ -250,15 +259,15 @@
                         <h3>Unconditional Generation</h3>
                     </strong>
                     <img-comparison-slider style="width: 49%;" hover="hover" value="66">
-                        <img slot="first" src="imgs/baseline/sd_uncond_baseline_quarter.png" width="100%" />
-                        <img slot="second" src="imgs/ours/sd_uncond_ours_quarter.png" width="100%" />
+                        <img slot="first" src="imgs/baseline/sd_uncond_baseline_quarter.jpg" width="100%" />
+                        <img slot="second" src="imgs/ours/sd_uncond_ours_quarter.jpg" width="100%" />
                     </img-comparison-slider>
                     <strong>
                         <h3>Conditional Generation (CFG vs CFG + Ours)</h3>
                     </strong>
                     <img-comparison-slider style="width: 75%;" hover="hover" value="66">
-                        <img slot="first" src="imgs/baseline/sd_cfg.png" width="100%" />
-                        <img slot="second" src="imgs/ours/sd_cfg_ours.png" width="100%" />
+                        <img slot="first" src="imgs/baseline/sd_cfg.jpg" width="100%" />
+                        <img slot="second" src="imgs/ours/sd_cfg_ours.jpg" width="100%" />
                     </img-comparison-slider>
                 </div>
             </div>
@@ -290,12 +299,12 @@
                                 href="https://github.com/LituRout/PSLD/tree/main?tab=readme-ov-file">PSLD</a>)
                         </h3>
                     </strong>
-                    <img src="imgs/applications/psld_quarter_calibri.png" style="width: 75%;" width="100%">
+                    <img src="imgs/applications/psld_quarter_calibri.jpg" style="width: 75%;" width="100%">
                     <strong>
                         <h3>ControlNet with Empty Prompt (<a href="https://arxiv.org/abs/2302.05543">ControlNet</a>)
                         </h3>
                     </strong>
-                    <img src="imgs/applications/controlnet_quarter.png" style="width: 75%;" width="100%">
+                    <img src="imgs/applications/controlnet_quarter.jpg" style="width: 75%; padding-right: 3%;" width="100%">
                 </div>
             </div>
 
