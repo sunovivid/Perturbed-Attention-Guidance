@@ -16,6 +16,14 @@ by [Donghoon Ahn](https://github.com/sunovivid)\*, [Hyoungwon Cho](https://githu
 
 For more information, check out [the project page](https://ku-cvlab.github.io/Perturbed-Attention-Guidance) and [the paper](https://arxiv.org/abs/2403.17377).
 
+## News
+
+**2024-03-31:** The [SD WebUI (automatic1111) extension](https://github.com/v0xie/sd-webui-incantations) is now available, thanks to the awesome work of @v0xie!
+
+**2024-04-07:** The [application to **PSLD**](https://github.com/Min-Jaewon/PSLD_PAG) is now available!
+
+**2024-04-12:** The [**ComfyUI / SD WebUI Forge node**](https://github.com/pamparamm/sd-perturbed-attention) is now available, thanks to the awesome work of @pamparamm!
+
 ## Overview
 
 This repository is based on [SusungHong/Self-Attention-Guidance](https://github.com/SusungHong/Self-Attention-Guidance), which is based on [openai/guided-diffusion](https://github.com/openai/guided-diffusion). The environment setup and the pretrained models are the same as the original repository. The main difference is that the sampling code is modified to support perturbed-attention guidance. Please refer to [Using PAG in Guided-Diffusion](#Using-PAG-in-Guided-Diffusion) for environment setup and sampling.
@@ -115,7 +123,7 @@ sh run/sample_uncond_ddim25.sh
 sh run/sample_cond_ddim25.sh
 ```
 
-## Multi-GPU Sampling
+### Multi-GPU Sampling
 If mpiexec is installed, you can use the following command to sample from multiple GPUs.
 
 ```
@@ -145,3 +153,24 @@ PSLD is a framework to solve linear inverse problems leveraging pre-trained late
 ### Stable Diffusion Inpainting + PAG
 
 Will be added soon.
+
+## Implementation for Community Pipelines (SD WebUI / SD WebUI Forge / ComfyUI)
+
+Would you like to integrate this with your workflows or pipelines?
+
+Thanks to the exceptional efforts of @v0xie and @pamparamm, you can now easily incorporate PAG into your pipelines or workflows.
+
+**WebUI (Automatic1111)**: [v0xie/sd-webui-incantations](https://github.com/v0xie/sd-webui-incantations)
+
+**ComfyUI / SD WebUI Forge**: [pamparamm/sd-perturbed-attention](https://github.com/pamparamm/sd-perturbed-attention)
+
+# Citation
+If you find our work useful in your research, please cite our work as:
+```
+@article{ahn2024self,
+  title={Self-Rectifying Diffusion Sampling with Perturbed-Attention Guidance},
+  author={Ahn, Donghoon and Cho, Hyoungwon and Min, Jaewon and Jang, Wooseok and Kim, Jungwoo and Kim, SeonHwa and Park, Hyun Hee and Jin, Kyong Hwan and Kim, Seungryong},
+  journal={arXiv preprint arXiv:2403.17377},
+  year={2024}
+}
+```
