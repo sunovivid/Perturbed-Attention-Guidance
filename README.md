@@ -154,7 +154,7 @@ PSLD is a framework to solve linear inverse problems leveraging pre-trained late
 
 Will be added soon.
 
-## Implementation for Community Pipelines (SD WebUI / SD WebUI Forge / ComfyUI)
+## Community Implementation for GUI Interfaces (SD WebUI, WebUI Forge, and ComfyUI)
 
 Thanks to the exceptional efforts of @v0xie and @pamparamm, you can now easily incorporate PAG into your pipelines or workflows.
 
