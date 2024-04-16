@@ -155,7 +155,34 @@ PSLD is a framework to solve linear inverse problems leveraging pre-trained late
 
 ### Stable Diffusion Inpainting + PAG
 
-Will be added soon.
+Below custom pipeline is a modification of Stable Diffusion Inpainting pipeline to support PAG. You can try various pretrained weights for inpainting. Please refer to [Inpainting](https://huggingface.co/docs/diffusers/using-diffusers/inpaint) for details.
+
+Loading Custom Pipeline
+```
+from diffusers import StableDiffusionPipeline
+
+pipe = StableDiffusionPipeline.from_pretrained(
+    "runwayml/stable-diffusion-inpainting",
+    custom_pipeline="hyoungwoncho/sd_perturbed_attention_guidance_inpaint",
+    torch_dtype=torch.float16,
+    safety_checker=None
+)
+
+device="cuda"
+pipe = pipe.to(device)
+```
+Sampling with PAG
+```
+output = pipe(
+        prompts,
+        image=init_image,
+        mask_image=mask_image,
+        num_inference_steps=50,
+        guidance_scale=0.0,
+        pag_scale=5.0,
+        pag_applied_layers_index=['m0']
+    ).images[0]
+```
 
 ## Community Implementation for GUI Interfaces (SD WebUI, WebUI Forge, and ComfyUI)
 
