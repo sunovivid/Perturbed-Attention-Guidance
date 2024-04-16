@@ -1,8 +1,9 @@
 # Perturbed-Attention Guidance
 <a href="https://arxiv.org/abs/2403.17377"><img src="https://img.shields.io/badge/arXiv-2403.17377-B31B1B"></a>
 <a href="https://ku-cvlab.github.io/Perturbed-Attention-Guidance"><img src="https://img.shields.io/badge/Project%20Page-online-brightgreen"></a>
-<a href="https://huggingface.co/hyoungwoncho/sd_perturbed_attention_guidance"><img src="https://img.shields.io/badge/HuggingFace-demo-yellow"></a>
-<a target="_blank" href="https://colab.research.google.com/#fileId=https://huggingface.co/hyoungwoncho/sd_perturbed_attention_guidance/blob/main/sd_pag_demo.ipynb">
+<a href="https://huggingface.co/spaces/multimodalart/perturbed-attention-guidance-sdxl"><img src="https://img.shields.io/badge/Hugging%20Face%20%F0%9F%A4%97-demo-yellow"></a>
+<a href="https://huggingface.co/hyoungwoncho/sd_perturbed_attention_guidance"><img src="https://img.shields.io/badge/Diffusers%20%F0%9F%A7%A8-pipeline-red"></a>
+<a target="_blank" href="https://colab.research.google.com/#fileId=https://huggingface.co/hyoungwoncho/sd_perturbed_attention_guidance/blob/main/sd_pag_dem.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 
@@ -24,6 +25,8 @@ For more information, check out [the project page](https://ku-cvlab.github.io/Pe
 
 **2024-04-12:** The [**ComfyUI / SD WebUI Forge node**](https://github.com/pamparamm/sd-perturbed-attention) is now available, thanks to the awesome work of @pamparamm!
 
+**2024-04-15:** The [**🧨 Diffusers pipelin for SDXL**](https://huggingface.co/multimodalart/sdxl_perturbed_attention_guidance) is now available, thanks to the work of @multimodalart!
+
 ## Overview
 
 This repository is based on [SusungHong/Self-Attention-Guidance](https://github.com/SusungHong/Self-Attention-Guidance), which is based on [openai/guided-diffusion](https://github.com/openai/guided-diffusion). The environment setup and the pretrained models are the same as the original repository. The main difference is that the sampling code is modified to support perturbed-attention guidance. Please refer to [Using PAG in Guided-Diffusion](#Using-PAG-in-Guided-Diffusion) for environment setup and sampling.
@@ -37,7 +40,7 @@ You can try a demo in Colab! <a target="_blank" href="https://colab.research.goo
 </a>
 
 Loading Custom Pipeline
-```
+```py
 from diffusers import StableDiffusionPipeline
 
 pipe = StableDiffusionPipeline.from_pretrained(
@@ -53,7 +56,7 @@ pipe = pipe.to(device)
 prompts = ["a corgi"]
 ```
 Sampling with PAG
-```
+```py
 output = pipe(
         prompts,
         width=512,
@@ -65,7 +68,7 @@ output = pipe(
     ).images[0]
 ```
 Sampling with PAG and CFG
-```
+```py
 output = pipe(
         prompts,
         width=512,
@@ -75,6 +78,45 @@ output = pipe(
         pag_scale=3.0,
         pag_applied_layers_index=['m0']
     ).images[0]
+```
+
+## Using PAG with Stable Diffusion XL
+
+You can try a demo on Hugging Face Spaces! <a href="https://huggingface.co/spaces/multimodalart/perturbed-attention-guidance-sdxl"><img src="https://img.shields.io/badge/Hugging%20Face%20%F0%9F%A4%97-demo-yellow"></a>
+</a>
+
+Loading Custom Pipeline
+```py
+from diffusers import StableDiffusionXLPipeline
+
+pipe = StableDiffusionXLPipeline.from_pretrained(
+    "stabilityai/stable-diffusion-xl-base-1.0",
+    custom_pipeline="multimodalart/sdxl_perturbed_attention_guidance",
+    torch_dtype=torch.float16
+)
+
+device="cuda"
+pipe = pipe.to(device)
+```
+Sampling with PAG
+```py
+output = pipe(
+        "",
+        num_inference_steps=25,
+        guidance_scale=0.0,
+        pag_scale=5.0,
+        pag_applied_layers=['mid']
+).images[0]
+```
+Sampling with PAG and CFG
+```py
+output = pipe(
+        "the spirit of a tamagotchi wandering in the city of Vienna",
+        num_inference_steps=25,
+        guidance_scale=4.0,
+        pag_scale=3.0,
+        pag_applied_layers=['mid']
+).images[0]
 ```
 
 ## Using PAG with Guided-Diffusion 
@@ -191,6 +233,8 @@ Thanks to the exceptional efforts of @v0xie and @pamparamm, you can now easily i
 **WebUI (Automatic1111)**: [v0xie/sd-webui-incantations](https://github.com/v0xie/sd-webui-incantations)
 
 **ComfyUI / SD WebUI Forge**: [pamparamm/sd-perturbed-attention](https://github.com/pamparamm/sd-perturbed-attention)
+
+**Diffusers SDXL**: [multimodalart/sdxl_perturbed_attention_guidance](https://huggingface.co/multimodalart/sdxl_perturbed_attention_guidance)
 
 # Citation
 If you find our work useful in your research, please cite our work as:
