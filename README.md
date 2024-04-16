@@ -43,11 +43,14 @@ from diffusers import StableDiffusionPipeline
 pipe = StableDiffusionPipeline.from_pretrained(
     "runwayml/stable-diffusion-v1-5",
     custom_pipeline="hyoungwoncho/sd_perturbed_attention_guidance",
-    torch_dtype=torch.float16
+    torch_dtype=torch.float16,
+    safety_checker=None
 )
 
 device="cuda"
 pipe = pipe.to(device)
+
+prompts = ["a corgi"]
 ```
 Sampling with PAG
 ```
