@@ -58,26 +58,26 @@ prompts = ["a corgi"]
 Sampling with PAG
 ```py
 output = pipe(
-        prompts,
-        width=512,
-        height=512,
-        num_inference_steps=50,
-        guidance_scale=0.0,
-        pag_scale=5.0,
-        pag_applied_layers_index=['m0']
-    ).images[0]
+    prompts,
+    width=512,
+    height=512,
+    num_inference_steps=50,
+    guidance_scale=0.0,
+    pag_scale=5.0,
+    pag_applied_layers_index=['m0']
+).images[0]
 ```
 Sampling with PAG and CFG
 ```py
 output = pipe(
-        prompts,
-        width=512,
-        height=512,
-        num_inference_steps=50,
-        guidance_scale=4.0,
-        pag_scale=3.0,
-        pag_applied_layers_index=['m0']
-    ).images[0]
+    prompts,
+    width=512,
+    height=512,
+    num_inference_steps=50,
+    guidance_scale=4.0,
+    pag_scale=3.0,
+    pag_applied_layers_index=['m0']
+).images[0]
 ```
 
 ## Using PAG with Stable Diffusion XL
@@ -101,21 +101,21 @@ pipe = pipe.to(device)
 Sampling with PAG
 ```py
 output = pipe(
-        "",
-        num_inference_steps=25,
-        guidance_scale=0.0,
-        pag_scale=5.0,
-        pag_applied_layers=['mid']
+    "",
+    num_inference_steps=25,
+    guidance_scale=0.0,
+    pag_scale=5.0,
+    pag_applied_layers=['mid']
 ).images[0]
 ```
 Sampling with PAG and CFG
 ```py
 output = pipe(
-        "the spirit of a tamagotchi wandering in the city of Vienna",
-        num_inference_steps=25,
-        guidance_scale=4.0,
-        pag_scale=3.0,
-        pag_applied_layers=['mid']
+    "the spirit of a tamagotchi wandering in the city of Vienna",
+    num_inference_steps=25,
+    guidance_scale=4.0,
+    pag_scale=3.0,
+    pag_applied_layers=['mid']
 ).images[0]
 ```
 
@@ -197,7 +197,7 @@ PSLD is a framework to solve linear inverse problems leveraging pre-trained late
 
 ### Stable Diffusion Inpainting + PAG
 
-Below custom pipeline is a modification of Stable Diffusion Inpainting pipeline to support PAG. You can try various pretrained weights for inpainting. Please refer to [Inpainting](https://huggingface.co/docs/diffusers/using-diffusers/inpaint) for details.
+Below [pipeline](https://huggingface.co/hyoungwoncho/sd_perturbed_attention_guidance_inpaint) is a modification of Stable Diffusion Inpainting pipeline to support PAG. You can try various pretrained weights for inpainting. Please refer to "Inpainting" section of an [official document](https://huggingface.co/docs/diffusers/using-diffusers/inpaint) for details.
 
 Loading Custom Pipeline
 ```
@@ -216,14 +216,44 @@ pipe = pipe.to(device)
 Inpainting with PAG
 ```
 output = pipe(
-        prompts,
-        image=init_image,
-        mask_image=mask_image,
-        num_inference_steps=50,
-        guidance_scale=0.0,
-        pag_scale=5.0,
-        pag_applied_layers_index=['m0']
-    ).images[0]
+    prompts,
+    image=init_image,
+    mask_image=mask_image,
+    num_inference_steps=50,
+    guidance_scale=0.0,
+    pag_scale=3.0,
+    pag_applied_layers_index=['u0']
+).images[0]
+```
+
+### Stable Diffusion Upscaling + PAG
+
+Below [pipeline](https://huggingface.co/hyoungwoncho/sd_perturbed_attention_guidance_sr) is a modification of Stable Diffusion Upscaling pipeline to support PAG. You can try various pretrained weights for upscaling or super-resolution. Please refer to "Image-to-upscaler-to-super-resolution" section of an [official document](https://huggingface.co/docs/diffusers/using-diffusers/inpaint) for details.
+
+Loading Custom Pipeline
+```
+from diffusers import StableDiffusionPipeline
+
+pipe = StableDiffusionPipeline.from_pretrained(
+    "stabilityai/stable-diffusion-x4-upscaler",
+    custom_pipeline="hyoungwoncho/sd_perturbed_attention_guidance_sr",
+    torch_dtype=torch.float16,
+    safety_checker=None
+)
+
+device="cuda"
+pipe = pipe.to(device)
+```
+Super-Resolution with PAG
+```
+output = pipe(
+    prompts,
+    image=lr_image,
+    num_inference_steps=50,
+    guidance_scale=0.0,
+    pag_scale=2.0,
+    pag_applied_layers_index=['u2']
+).images[0]
 ```
 
 ## Community Implementation for GUI Interfaces (SD WebUI, WebUI Forge, and ComfyUI)
