@@ -228,7 +228,7 @@ output = pipe(
 
 ### Stable Diffusion Upscaling + PAG
 
-Below [pipeline](https://huggingface.co/hyoungwoncho/sd_perturbed_attention_guidance_sr) is a modification of Stable Diffusion Upscaling pipeline to support PAG. You can try various pretrained weights for upscaling or super-resolution. Please refer to "Image-to-upscaler-to-super-resolution" section of an [official document](https://huggingface.co/docs/diffusers/using-diffusers/inpaint) for details.
+Below [pipeline](https://huggingface.co/hyoungwoncho/sd_perturbed_attention_guidance_sr) is a modification of Stable Diffusion Upscaling pipeline to support PAG. You can try various pretrained weights for upscaling or super-resolution. Please refer to "Image-to-upscaler-to-super-resolution" section of an [official document](https://huggingface.co/docs/diffusers/using-diffusers/img2img) for details.
 
 Loading Custom Pipeline
 ```
