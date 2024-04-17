@@ -256,7 +256,7 @@ output = pipe(
 ).images[0]
 ```
 
-### Stable Diffusion Upscaling + PAG
+### ControlNet + PAG
 
 Will be added soon.
 
