@@ -19,13 +19,13 @@ For more information, check out [the project page](https://ku-cvlab.github.io/Pe
 
 ## News
 
-**2024-03-31:** The [SD WebUI (automatic1111) extension](https://github.com/v0xie/sd-webui-incantations) is now available, thanks to the awesome work of [@v0xie](https://github.com/v0xie)!
-
-**2024-04-07:** The [application to **PSLD**](https://github.com/Min-Jaewon/PSLD_PAG) is now available!
+**2024-04-15:** The [**🧨 Diffusers pipeline for SDXL**](https://huggingface.co/multimodalart/sdxl_perturbed_attention_guidance) is now available, thanks to the awesome work of [@multimodalart](https://github.com/multimodalart)!
 
 **2024-04-12:** The [**ComfyUI / SD WebUI Forge node**](https://github.com/pamparamm/sd-perturbed-attention) is now available, thanks to the awesome work of [@pamparamm](https://github.com/pamparamm)!
 
-**2024-04-15:** The [**🧨 Diffusers pipeline for SDXL**](https://huggingface.co/multimodalart/sdxl_perturbed_attention_guidance) is now available, thanks to the awesome work of [@multimodalart](https://github.com/multimodalart)!
+**2024-04-07:** The [application to **PSLD**](https://github.com/Min-Jaewon/PSLD_PAG) is now available!
+
+**2024-03-31:** The [SD WebUI (automatic1111) extension](https://github.com/v0xie/sd-webui-incantations) is now available, thanks to the awesome work of [@v0xie](https://github.com/v0xie)!
 
 ## Overview
 
