@@ -256,6 +256,10 @@ output = pipe(
 ).images[0]
 ```
 
+### Stable Diffusion Upscaling + PAG
+
+Will be added soon.
+
 ## Community Implementation for GUI Interfaces (SD WebUI, WebUI Forge, and ComfyUI)
 
 Thanks to the exceptional efforts of @v0xie and @pamparamm, you can now easily incorporate PAG into your pipelines or workflows.
