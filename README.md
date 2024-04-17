@@ -213,7 +213,7 @@ pipe = StableDiffusionPipeline.from_pretrained(
 device="cuda"
 pipe = pipe.to(device)
 ```
-Sampling with PAG
+Inpainting with PAG
 ```
 output = pipe(
         prompts,
