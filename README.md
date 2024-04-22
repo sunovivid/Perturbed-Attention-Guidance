@@ -258,7 +258,52 @@ output = pipe(
 
 ### ControlNet + PAG
 
-Will be added soon.
+[ControlNet](https://arxiv.org/abs/2302.05543) is a neural network structure to control diffusion models by adding extra conditions. The [pipeline](https://huggingface.co/hyoungwoncho/sd_perturbed_attention_guidance_controlnet) is a modification of StableDiffusionControlNetPipeline to support image generation with ControlNet and Perturbed-Attention Guidance (PAG).
+
+In addition to the examples provided with Openpose, you can also generate using various conditions. Please refer to "ControlNet" section of an [official document](https://huggingface.co/docs/diffusers/using-diffusers/controlnet) for details.
+
+Loading ControlNet and Custom Piepline:
+```
+from diffusers import ControlNetModel, StableDiffusionControlNetPipeline
+
+controlnet = ControlNetModel.from_pretrained(
+    "lllyasviel/sd-controlnet-openpose",
+    torch_dtype=torch.float16
+)
+
+pipe = StableDiffusionControlNetPipeline.from_pretrained(
+    "runwayml/stable-diffusion-v1-5",
+    custom_pipeline="hyoungwoncho/sd_perturbed_attention_guidance_controlnet",
+    controlnet=controlnet,
+    torch_dtype=torch.float16
+)
+
+device="cuda"
+pipe = pipe.to(device)
+```
+Prepare Conditional Images:
+```
+from controlnet_aux import OpenposeDetector
+
+openpose = OpenposeDetector.from_pretrained("lllyasviel/ControlNet")
+original_image = load_image(
+    "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/diffusers/person.png"
+)
+openpose_image = openpose(original_image)
+
+prompts=""
+```
+Conditional Generation with ControlNet and PAG:
+```
+output = pipe(
+    prompts,
+    image=openpose_image,
+    num_inference_steps=50,
+    guidance_scale=0.0,
+    pag_scale=4.0,
+    pag_applied_layers_index=["m0"]
+).images[0]
+```
 
 ## Community Implementation for GUI Interfaces (SD WebUI, WebUI Forge, and ComfyUI)
 
