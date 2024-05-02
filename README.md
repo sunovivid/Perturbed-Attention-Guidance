@@ -82,7 +82,7 @@ output = pipe(
 
 ## Using PAG with Stable Diffusion XL
 
-You can try a demo on Hugging Face Spaces! <a href="https://huggingface.co/spaces/multimodalart/perturbed-attention-guidance-sdxl"><img src="https://img.shields.io/badge/Hugging%20Face%20%F0%9F%A4%97-demo-yellow"></a>
+Thanks to [multimodalart](https://github.com/multimodalart), you can try a demo on Hugging Face Spaces! <a href="https://huggingface.co/spaces/multimodalart/perturbed-attention-guidance-sdxl"><img src="https://img.shields.io/badge/Hugging%20Face%20%F0%9F%A4%97-demo-yellow"></a>
 </a>
 
 Loading Custom Pipeline
