@@ -2,7 +2,7 @@
 <a href="https://arxiv.org/abs/2403.17377"><img src="https://img.shields.io/badge/arXiv-2403.17377-B31B1B"></a>
 <a href="https://ku-cvlab.github.io/Perturbed-Attention-Guidance"><img src="https://img.shields.io/badge/Project%20Page-online-brightgreen"></a>
 <a href="https://huggingface.co/spaces/multimodalart/perturbed-attention-guidance-sdxl"><img src="https://img.shields.io/badge/Hugging%20Face%20%F0%9F%A4%97-demo-yellow"></a>
-<a href="https://huggingface.co/hyoungwoncho/sd_perturbed_attention_guidance"><img src="https://img.shields.io/badge/Diffusers%20%F0%9F%A7%A8-pipeline-red"></a>
+<a href="https://huggingface.co/docs/diffusers/main/en/using-diffusers/pag#perturbed-attention-guidance"><img src="https://img.shields.io/badge/Diffusers%20%F0%9F%A7%A8-pipeline-red"></a>
 <a target="_blank" href="https://colab.research.google.com/#fileId=https://huggingface.co/hyoungwoncho/sd_perturbed_attention_guidance/blob/main/sd_pag_dem.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
