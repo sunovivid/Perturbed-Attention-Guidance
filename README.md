@@ -19,6 +19,8 @@ For more information, check out [the project page](https://ku-cvlab.github.io/Pe
 
 ## News
 
+**2024-06-25:** **🚨🚨 Big news!! 🧨 Diffusers now officially support PAG, including various pipelines such as ControlNet+PAG and IP-Adapter+PAG. See the documentation [here](https://huggingface.co/docs/diffusers/main/en/using-diffusers/pag). 🚨🚨**
+
 **2024-04-15:** The [**🧨 Diffusers pipeline for SDXL**](https://huggingface.co/multimodalart/sdxl_perturbed_attention_guidance) is now available, thanks to the awesome work of [@multimodalart](https://github.com/multimodalart)!
 
 **2024-04-12:** The [**ComfyUI / SD WebUI Forge node**](https://github.com/pamparamm/sd-perturbed-attention) is now available, thanks to the awesome work of [@pamparamm](https://github.com/pamparamm)!
