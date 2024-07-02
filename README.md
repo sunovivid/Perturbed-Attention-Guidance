@@ -1,4 +1,4 @@
-# Perturbed-Attention Guidance (ECCV`23)
+# Perturbed-Attention Guidance (ECCV 2024)
 <a href="https://arxiv.org/abs/2403.17377"><img src="https://img.shields.io/badge/arXiv-2403.17377-B31B1B"></a>
 <a href="https://ku-cvlab.github.io/Perturbed-Attention-Guidance"><img src="https://img.shields.io/badge/Project%20Page-online-brightgreen"></a>
 <a href="https://huggingface.co/spaces/multimodalart/perturbed-attention-guidance-sdxl"><img src="https://img.shields.io/badge/Hugging%20Face%20%F0%9F%A4%97-demo-yellow"></a>
@@ -19,7 +19,7 @@ For more information, check out [the project page](https://ku-cvlab.github.io/Pe
 
 ## News
 
-**2024-06-25:** **🚨🚨 Big news!! Our paper has been accepted to ECCV '23 🚨🚨**
+**2024-06-25:** **🚨🚨 Big news!! Our paper has been accepted to ECCV 2024 🚨🚨**
 
 **2024-06-25:** **✨ Diffusers now officially support PAG, including ControlNet+PAG and IP-Adapter+PAG. See the documentation [here](https://huggingface.co/docs/diffusers/main/en/using-diffusers/pag) ✨**
 
