@@ -320,7 +320,7 @@ Thanks to the exceptional efforts of @v0xie and @pamparamm, you can now easily i
 **Diffusers SDXL**: [multimodalart/sdxl_perturbed_attention_guidance](https://huggingface.co/multimodalart/sdxl_perturbed_attention_guidance)
 
 # ✨Citation✨
-If you find our work useful in your research, please cite our work as:
+If you find our work useful in your research, please cite our work :)
 ```
 @article{ahn2024self,
   title={Self-Rectifying Diffusion Sampling with Perturbed-Attention Guidance},
