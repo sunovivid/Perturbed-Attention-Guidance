@@ -1,4 +1,4 @@
-# Perturbed-Attention Guidance
+# Perturbed-Attention Guidance (ECCV`23)
 <a href="https://arxiv.org/abs/2403.17377"><img src="https://img.shields.io/badge/arXiv-2403.17377-B31B1B"></a>
 <a href="https://ku-cvlab.github.io/Perturbed-Attention-Guidance"><img src="https://img.shields.io/badge/Project%20Page-online-brightgreen"></a>
 <a href="https://huggingface.co/spaces/multimodalart/perturbed-attention-guidance-sdxl"><img src="https://img.shields.io/badge/Hugging%20Face%20%F0%9F%A4%97-demo-yellow"></a>
@@ -19,9 +19,11 @@ For more information, check out [the project page](https://ku-cvlab.github.io/Pe
 
 ## News
 
-**2024-06-25:** **🚨🚨 Big news!! 🧨 Diffusers now officially support PAG, including various pipelines such as ControlNet+PAG and IP-Adapter+PAG. See the documentation [here](https://huggingface.co/docs/diffusers/main/en/using-diffusers/pag). 🚨🚨**
+**2024-06-25:** **🚨🚨 Big news!! Our paper has been accepted to ECCV '23 🚨🚨**
 
-**2024-04-15:** The [**🧨 Diffusers pipeline for SDXL**](https://huggingface.co/multimodalart/sdxl_perturbed_attention_guidance) is now available, thanks to the awesome work of [@multimodalart](https://github.com/multimodalart)!
+**2024-06-25:** **✨ Diffusers now officially support PAG, including ControlNet+PAG and IP-Adapter+PAG. See the documentation [here](https://huggingface.co/docs/diffusers/main/en/using-diffusers/pag) ✨**
+
+**2024-04-15:** The [**🧨Diffusers pipeline for SDXL**](https://huggingface.co/multimodalart/sdxl_perturbed_attention_guidance) is now available, thanks to the awesome work of [@multimodalart](https://github.com/multimodalart)!
 
 **2024-04-12:** The [**ComfyUI / SD WebUI Forge node**](https://github.com/pamparamm/sd-perturbed-attention) is now available, thanks to the awesome work of [@pamparamm](https://github.com/pamparamm)!
 
@@ -317,7 +319,7 @@ Thanks to the exceptional efforts of @v0xie and @pamparamm, you can now easily i
 
 **Diffusers SDXL**: [multimodalart/sdxl_perturbed_attention_guidance](https://huggingface.co/multimodalart/sdxl_perturbed_attention_guidance)
 
-# Citation
+# ✨Citation✨
 If you find our work useful in your research, please cite our work as:
 ```
 @article{ahn2024self,
